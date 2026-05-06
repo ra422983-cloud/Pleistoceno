@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio_y_video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<h2>Agregar producto</h2>
+
+<form onsubmit="guardarProducto(event)">
+    <input type="text" id="nombreProducto" placeholder="Nombre">
+    <input type="number" id="precioProducto" placeholder="Precio">
+    <input type="number" id="stockProducto" placeholder="Stock">
+    <button type="submit">Guardar</button>
+</form>
+
+<section class="panel">
+    <h2>Tienda del Pleistoceno</h2>
+    <ul id="productos"></ul>
+</section>
+
+
+
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+
+
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+    </section>
+</main>
+</body>
+</html>

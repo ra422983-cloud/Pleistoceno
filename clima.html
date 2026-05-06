@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fauna del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+
+</style>  
+</head>
+<body>
+<header>
+   
+   
+   <nav class="navbar"><h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio y video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Clima</h2>
+<img id = "principal" src="clima del pleistoceno.png" alt="Mapa de hielos durante el Pleistoceno" width="400">
+<p>Durante todo el Pleistoceno, extensos campos de hielo se expandieron durante las zonas más elevadas del planeta (proceso llamado glaciación), tomando como principal concentración al hemisferio norte, aunque ambos hemisferios fueron alternándose según las épocas presentes.</p>
+<p>La razón de por qué en Sudamérica no hubo tanta presencia de la glaciación fue debido a que, si bien el Ártico produce el mismo frío que su contra parte en el norte, está separado de los continentes meridionales por un océano circumpolar el cual se extiende entre los 55º y 60º, lo que redujo la creación de glaciares en el hemisferio sur y lo que a su vez provocó que el Mar de Hoces siempre se mantuviera libre de glaciares.</p>
+</section>
+<section>
+<h2>Características Climáticas Principales:</h2>
+<ul>
+<li>Ciclos Glaciares e Interglaciares:</li><p>Se produjeron al menos 20 ciclos de avance y retroceso de glaciares. Durante las glaciaciones, el hielo cubría hasta el 30% de la superficie terrestre, extendiéndose por Norteamérica, Europa y Rusia.</p>
+<li>Enfriamiento Global:</li><p>Las temperaturas globales eran notablemente más bajas, con una disminución media de unos 5-6°C en los periodos más fríos.</p>
+<li>Aridez y Polvo:</li><p>El clima era mucho más seco que hoy. La reducción de precipitaciones y la actividad glaciar aumentaron las tormentas de polvo</p>
+<li>Bajo Nivel del Mar:</li><p>Durante el punto máximo de las glaciaciones, gran parte del agua estaba atrapada en el hielo, lo que provocó que el nivel del mar fuera más de 120 metros más bajo que en la actualidad.</p>
+<li>Influencia Orbital:</li><p>Las fluctuaciones climáticas fueron impulsadas por variaciones en la órbita terrestre (ciclos de Milankovitch), que modificaron la cantidad de energía solar recibida.</p>
+</ul>
+
+<p>Las condiciones climáticas observadas en el Pleistoceno son una continuación del clima de la época anterior, el Plioceno, al final del cual las temperaturas del planeta descendieron considerablemente.
+
+En este sentido, la característica principal del clima del Pleistoceno fueron las glaciaciones que se produjeron, así como la formación de gruesas capas de hielo en la superficie de los continentes.
+
+Esto último se observó principalmente en las franjas de tierra más cercanas a los polos. La Antártida se mantuvo casi la totalidad del tiempo cubierta de hielo, en tanto que los extremos norte de los continentes americano y europeo estuvieron cubiertos de hielo durante las glaciaciones.
+
+Durante el Pleistoceno se produjeron cuatro glaciaciones, separadas unas de otras por períodos interglaciares. Las glaciaciones reciben un nombre distinto en el continente europeo y en el continente americano.</p>
+
+<ul>
+<li>Günz:</li><p>conocida con este nombre en Europa, en América se conoce como glaciación de Nebraska. Fue la primera glaciación que se registró en el Pleistoceno. Terminó hace 600.000 años.</p><img id = "principal" src="günz.png" alt="Günz" width="400">
+<li>Mindel:</li><p>conocida en el continente americano como glaciación de Kansas. Ocurrió tras un período interglaciar de 20.000 años. Tuvo una duración de 190.000 años.</p><img id = "principal" src="mindel.png" alt="Mindel" width="400">
+<li>Riss:</li><p>ercera glaciación de esta época. Se conoce en América como glaciación de Illinois. Tuvo su final hace 140.000 años.</p><img id = "principal" src="riss.png" alt="Riss" width="400">
+<li>Würm:</li><p>es conocida como la Edad del Hielo. En el continente americano se denomina glaciación de Wisconsin. Tuvo su inicio hace 110.000 años y finalizó aproximadamente en el 10.000 a.C.</p><img id = "principal" src="würm.png" alt="Wünz" width="400">
+</ul>
+<p>Al finalizar la última glaciación, se inició un período posglacial que se ha extendido hasta la actualidad. Muchos científicos consideran que el planeta actualmente se encuentra en un período interglaciar y que es probable que en algunos millones de años se desencadene otra glaciación.</p>
+</section>
+<section>
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+
+<div class="carrusel">
+    <img src="clima del pleistoceno.png" style="display:block">
+    <img src="günz.png" style="display:none">
+    <img src="mindel.png" style="display:none">
+    <img src="riss.png" style="display:none">
+    <img src="würm.png" style="display:none">
+</div>
+
+<button onclick="moverCarrusel(-1)">Anterior</button>
+<button onclick="moverCarrusel(1)">Siguiente</button>
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fauna del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+<body>
+<header>
+   
+   <nav class="navbar"><h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio_y_video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Información del participante</h2>
+    
+    
+<form onsubmit="return validarFormulario()">
+
+    <!-- Nombre -->
+<label for="nombre">Nombre:</label><br>
+<input type="text" id="nombre" name="nombre" required><br><br>
+
+<!-- Email -->
+<label for="correo">Correo electrónico:</label><br>
+<input type="email" id="correo" name="correo" required><br><br>
+
+<!-- Teléfono -->
+<label for="telefono">Teléfono:</label><br>
+<input type="tel" id="telefono" name="telefono" 
+       pattern="[0-9]{10}" 
+       placeholder="10 dígitos" required><br><br>
+
+<!-- Select -->
+<label for="nivel">¿Qué tanto sabías del Pleistoceno antes de esta página?</label><br>
+<select id="nivel" name="nivel" required>
+    <option value="">Selecciona una opción</option>
+    <option value="nada">Nada</option>
+    <option value="poco">Poco</option>
+    <option value="regular">Regular</option>
+    <option value="mucho">Mucho</option>
+</select><br><br>
+
+<!-- Checkbox -->
+<label>¿Qué animales te parecieron más interesantes?</label><br>
+
+<input type="checkbox" name="interes" value="mamut"> Mamut<br>
+<input type="checkbox" name="interes" value="smilodon"> Smilodon<br>
+<input type="checkbox" name="interes" value="lobo"> Lobo terrible<br>
+<input type="checkbox" name="interes" value="mastodonte"> Mastodonte<br><br>
+
+<!-- File con accept -->
+<label for="imagen">Sube una imagen o dibujo relacionado con el Pleistoceno:</label><br>
+<input type="file" id="imagen" name="imagen" 
+       accept="image/*" capture="environment"><br><br>
+
+<!-- Textarea -->
+<label for="comentario">¿Qué fue lo que más te sorprendió?</label><br>
+<textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+</section>
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+</main>
+
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

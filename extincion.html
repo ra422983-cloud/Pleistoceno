@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+    <title>Fauna del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+<body>
+<header>
+   
+   
+   <nav class="navbar"><h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio_y_video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Extinción</h2>
+El Pleistoceno tardío hasta el comienzo del Holoceno vio la extinción de la mayoría de la megafauna del mundo , típicamente definida como especies animales con masas corporales superiores a 44 kg (97 lb), lo que resultó en un colapso en la densidad y diversidad de la fauna en todo el mundo. Las extinciones durante el Pleistoceno tardío se diferencian de las extinciones anteriores por su sesgo de tamaño extremo hacia animales grandes (los animales pequeños se mantuvieron en gran medida intactos), la ausencia generalizada de sucesión ecológica para reemplazar a estas especies de megafauna extintas, y el cambio de régimen de las relaciones y hábitats faunísticos previamente establecidos como consecuencia.</p>
+</section>
+<section>
+<h2>Principales Impactos y Hallazgos</h2>
+<ul>
+<li>América del Norte y Sur:</li><p>Sufrieron una pérdida masiva del 73% al 80% de los géneros de grandes mamíferos hace entre 10,000 y 12,000 años.</p>
+<li>Australia:</li><p>La megafauna comenzó a desaparecer hace 40,000-50,000 años, poco después de la llegada de los humanos, incluyendo wombats y canguros gigantes.</p>
+<li>Eurasia:</li><p>La extinción ocurrió de manera escalonada, afectando primero a especies templadas y más tarde a especies adaptadas al frío intenso.</p>
+<li>Factores de extinción:</li><p> Los animales grandes eran más vulnerables debido a sus bajas tasas de reproducción, largos periodos de gestación y alta demanda de alimento, lo que dificultó su supervivencia ante la rápida alteración de sus hábitats y la caza.</p>
+</ul>
+
+<img id="principal" src="extincion.png" alt="Animales del Pleistoceno" width="400">
+</section>
+<section>
+<h3>¿Como desaparecieron los Smilodones?</h3>
+<p>La extinción de estos felinos, es un tema de grandes debates. Las hipótesis mas acertadas y mas creíbles son el cambio climático y la desaparición de sus presas potenciales. El paneta experimento cambios climáticos y esto afecto duro a muchas especies y esto extinguio al smilodon. Este carnívoro estaba especializado para cazar presas de mayor peso y tamaño (como los toxodontes), y al desaparecer esto provoco la escacez de alimento. Otra hipotesis es por el hombre, pero esta es menos probable. Es cierto que el hombre extinguio a muchos animales pero hace 11,000 años non representaban ninguna amenaza.</p>
+<img src="smilodon extincion.png" alt="Smildones Antes y durante su extinción" width="500" onclick="cambiar(this)">
+<p><span style="color: #053345;">Smildones Antes y durante su extinción(Prehistoric Park, Impossible Pictures(2006))</span></p>
+</section>
+<section>
+<h4>¿Que extinguio a los Mamuts?</h4>
+<p>Este es un tema que esta en debate, y no se sabe con certeza que acabo con ellos. Muchos apuntan al cambio climatico, lo que hacia que sus rebaños empezaran a reducirse. La otra teoria es mas popular, en la que fueron los humanos primitivos (conocidos como neandertales) quienes los acabaron, ya que ahi los cazaban en maza. En la actualidad muchos animales los cazan por codicia y ambicion. Lo cual es triste, y tambien en el pasado, ya que en el pasado era para sobrevivir.</p>
+<img src="hunting mammoths.png" alt="Humanos Primitivos cazando mamuts" width="500" onclick="cambiar(this)">
+<p><span style="color: #053345;">Humanos Primitivos cazando mamuts(Walking with Beasts, BBC(2001))</span></p>
+<blockquote>
+                    Hace 4,000 años, cuando se construyeron las piramides de egipto, el ultimo mamut murio, y la especie dejo de existir.
+                </blockquote>
+                <cite>Christopher Plummer</cite>
+
+</section>
+<section>
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+
+<div class="carrusel">
+    <img src="extincion.png" style="display:block">
+    <img src="smilodon extincion.png" style="display:none">
+    <img src="hunting mammoths.png" style="display:none">
+</div>
+
+<button onclick="moverCarrusel(-1)">Anterior</button>
+<button onclick="moverCarrusel(1)">Siguiente</button>
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+</section>
+
+</main>
+</body>
+</html>
