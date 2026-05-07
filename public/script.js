@@ -100,13 +100,13 @@ function cargarListaProductos(){
             let li = document.createElement("li");
 
             li.innerHTML = `
-    <strong>${p.nombre}</strong> 
+    <strong>${p.nombre || "Sin nombre"}</strong>
     - $${p.precio} 
     - Stock: ${p.stock || 0}
 
     <button onclick="editarProducto(
     '${p._id}', 
-    '${p.nombre.replace(/'/g, "")}', 
+    '${(p.nombre || "").replace(/'/g, "")}',
     '${p.precio}', 
     '${p.stock}'
 )">
