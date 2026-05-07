@@ -86,7 +86,7 @@ function moverCarrusel(direccion){
 }
 
 function cargarListaProductos(){
-    fetch("http://localhost:3000/api/productos", {
+    fetch("https://pleistoceno.onrender.com/api/productos", {
         cache: "no-store"
     })
     .then(res => res.json())
@@ -125,7 +125,6 @@ function cargarListaProductos(){
 
 window.onload = function(){
     cargarListaProductos();
-    cargarTablaProductos();
 
     let likes = localStorage.getItem("likes") || 0;
     let contador = document.getElementById("contadorLike");
@@ -148,33 +147,41 @@ function guardarProducto(e){
 
     // 🔥 SI ESTÁ EDITANDO
     if(productoEditando){
-        fetch(`http://localhost:3000/api/productos/${productoEditando}`, {
+        fetch(`https://pleistoceno.onrender.com/api/productos/${productoEditando}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ nombre, precio, stock })
+            body: JSON.stringify({
+    nombre,
+    precio: Number(precio),
+    stock: Number(stock)
+})
         })
         .then(res => res.json())
         .then(() => {
             productoEditando = null;
             limpiarFormulario();
-            cargarProductos();
+            cargarListaProductos();
         });
 
     } else {
         // 🔥 SI ES NUEVO
-        fetch("http://localhost:3000/api/productos", {
+        fetch("https://pleistoceno.onrender.com/api/productos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ nombre, precio, stock })
+            body: JSON.stringify({
+    nombre,
+    precio: Number(precio),
+    stock: Number(stock)
+})
         })
         .then(res => res.json())
         .then(() => {
             limpiarFormulario();
-            cargarProductos();
+            cargarListaProductos();
         });
     }
 }
@@ -200,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function cargarTablaProductos(){
-    fetch("http://localhost:3000/api/productos", {
+    fetch("https://pleistoceno.onrender.com/api/productos", {
         cache: "no-store"
     })
     .then(res => res.json())
@@ -231,13 +238,12 @@ function eliminarProducto(id){
     let confirmar = confirm("¿Seguro que quieres eliminar este producto?");
     if(!confirmar) return;
 
-    fetch(`http://localhost:3000/api/productos/${id}`, {
+    fetch(`https://pleistoceno.onrender.com/api/productos/${id}`, {
         method: "DELETE"
     })
     .then(res => res.json())
     .then(() => {
         cargarListaProductos();
-        cargarTablaProductos();
     });
 }
 
