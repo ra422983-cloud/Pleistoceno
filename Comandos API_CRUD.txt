@@ -1,0 +1,35 @@
+fetch("http://localhost:3000/api/productos")
+.then(res => res.json())
+.then(data => console.log(data));
+
+fetch("http://localhost:3000/api/productos/1")
+.then(res => res.json())
+.then(data => console.log(data));
+
+fetch("http://localhost:3000/api/productos", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        nombre: "Figura de Mamut",
+        precio: 500
+    })
+})
+.then(res => res.json())
+.then(data => console.log(data));
+
+fetch("http://localhost:3000/api/productos/1", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+        nombre: "Playera Mamut PRO",
+        precio: 350
+    })
+})
+.then(res => res.json())
+.then(data => console.log(data));
+
+fetch("http://localhost:3000/api/productos/2", {
+    method: "DELETE"
+})
+.then(res => res.json())
+.then(data => console.log(data));

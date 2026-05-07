@@ -1,0 +1,229 @@
+:root{
+    --color-50: #E6E7FF;
+    --color-100: #B8BBFF;
+    --color-200: #8A90FF;
+    --color-300: #5C64FF;
+    --color-400: #2E38FF;
+    --color-500: #000DFF;
+    --color-600: #000AD1;
+    --color-700: #000782;
+    --color-800: #000447;
+    --color-900: #00011A;
+}
+
+body{
+    background-color: var(--color-300);
+    color: var(--color-900);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    color: #B8BBFF;
+}
+
+h2, h3{
+    color: #000447;
+}
+
+p{
+    color: #000782;
+}
+
+.navbar{
+    background: linear-gradient(to right, var(--color-500), var(--color-300));
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--color-50);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover{
+    background-color: var(--color-200);
+    color: var(--color-900);
+    box-shadow: 0 0 10px var(--color-200);
+}
+
+#destacado{
+    background-color: var(--color-200);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--color-600);
+}
+
+img{
+    display: block;
+    margin: 20x auto;
+    padding: 5px;
+    border: 3px solid var(--color-300);
+    border-radius: 10px;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header{
+    width: 100%;
+}
+
+section.museos{
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.oscuro{
+    background-color: #000447;
+    color: #fff;
+}
+
+body.oscuro section,
+body.oscuro .panel{
+    background-color: #00011A;
+    color: #ddd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+body.oscuro .navbar{
+    background-color: #000;
+}
+
+body.oscuro a{
+    color: #8A90FF;
+}
+
+body.oscuro input,
+body.oscuro textarea{
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.oscuro table{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.oscuro th{
+    background-color: #333;
+}
+
+body.oscuro button{
+    background-color: #2E38FF;
+    color: white;
+    border: none;
+}
+
+.carrusel img{
+    width: 400px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.panel{
+    background: linear-gradient(to right, var(--color-400), var(--color-300));
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: white;
+}
+
+.panel input{
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.panel button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.oscuro h1{
+    color: #B8BBFF;
+}
+
+body.oscuro h2{
+    color: #8A90FF;
+}
+
+body.oscuro h3{
+    color: #5C64FF;
+}
+
+body.oscuro p{
+    color: #CFCFFF;
+}
+
+body.oscuro li{
+    color: #B8BBFF;
+}
+
+#btnArriba{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    background-color: var(--color-400);
+    color: white;
+
+    border: none;
+    border-radius: 50%; /* 🔥 redondo */
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    display: none;
+
+    transition: all 0.3s ease;
+}

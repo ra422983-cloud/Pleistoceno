@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <title>Fauna del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+<body>
+
+<header>
+   
+   
+   <nav class="navbar"><h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio_y_video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section>
+<p><span>Wikipedia: Mauricio Anton</span></p>
+ 
+<!--H1: Encabezado principal de la página-->
+<p>El Pleistoceno o mejor conocido como edad de hielo, es junto al Holoceno una subdivisión del Cuaternario. Duró entre 2,59 millones de años hasta hace 11.700 años. Se caracteriza por abarcar las ultimas glaciaciones. Los principales cambios en a fauna de mamiferos ocurrieron Durante
+las últimas glaciaciones y períodos interglaciares, con la extinción de la megafauna del Pleistoceno.
+</p><!--p: Esto es para escribir parrafos de texto-->
+<img id = "principal" src="img/Pleistoceno.png" alt="Paisaje del Pleistoceno" width="400">
+
+</section>
+<section>
+
+<p>Durante la última Edad de Hielo (hace ~110,000 a 10,000 años), México fue un refugio tropical de extraordinaria biodiversidad y megafauna, a menudo descrito como un "Serengueti" prehistórico. Con climas más fríos y secos, el territorio albergó mamuts de Columbia, mastodontes, perezosos gigantes, camellos, caballos nativos y depredadores como el diente de sable. </p>
+<h2>Glaciares</h2>
+<img src="img/glaciares.png" alt="Mapa de hielos durante el Pleistoceno" width="400">
+<p>Durante el Pleistoceno grandes extensiones de tierra se cubrieron con una inmensa capa de hielo, fenómeno denominado glaciación. En algunos períodos se redujo el tamaño de las capas de hielo y el clima se hizo más cálido. Estos períodos se denominan interglaciares.
+En el último millón de años, los principales períodos glaciares en Europa fueron cuatro y reciben los nombres de cuatro afluentes del Danubio, en los que, por primera vez, fueron identificados sus depósitos: Günz, Mindel, Riss y Würm (la más reciente). En Norteamérica las glaciaciones se denominan Nebraska, Kansas, Illinois y Wisconsin respectivamente. Con la reciente inclusión del Gelasiano dentro del Pleistoceno, se incluyeron dos nuevas glaciaciones Donau y Briggen.</p>
+
+</section>
+<section>
+<h2>Museos del Pleistoceno en México</h2>
+<h3>Museo del Mamut en el AIFA (Aeropuerto Internacional Felipe Angeles, Estado de México)</h3>
+<img src="img/museo del mamut.png" alt="museo Paleontológico del aifa" width="500">
+<p>En el interior el área de exhibición cuenta con 5 salas temáticas permanentes y una sala de exposiciones temporales:</p>
+<ul><!--ul: Lista no ordenada-->
+<li>Origen de la cuenca de México</li>
+<li>Mamut colombino</li>
+<li>Jardín temático</li>
+<li>Sendero de la fauna del pleistoceno</li>
+<li>Fósiles de grandes mamíferos</li>
+<li>Proceso de conservación paleontológica</li>
+</ul>
+<p>Se exhibe una maqueta con los animales que habitaron la zona en el período pleistoceno</p>
+<h3>Museo de la Paleontologia de Guadalajara (Jalisco)</h3>
+<img src="img/museo guadalajara.png" alt="museo Paleontológico de guadalajara" width="300"><img src="museo guadalajara smilodon.png" alt="Gigantes de la era de hielo, BBC" width="300"><img src="museo guadalajara stegomastodon.png" alt="museo Guadalajara stegomastodon" width="300">
+<p>El Museo de Paleontología de Guadalajara abrió sus puertas el 14 de febrero de 2000. Presenta una muestra importante de la megafauna pleistocénica del centro occidente de México, y es el resultado del trabajo de varias décadas del ingeniero Federico A. Solórzano Barreto. El concepto museográfico fue diseñado por los especialistas Roberto Cuétara y Óscar J. Polaco.
+</p>
+
+</section>
+<section>
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+
+<div class="carrusel">
+    <img src="img/Pleistoceno.png" style="display:block">
+    <img src="img/glaciares.png" style="display:none">
+    <img src="img/museo del mamut.png" style="display:none">
+    <img src="img/museo guadalajara smilodon.png" style="display:none">
+</div>
+
+<button onclick="moverCarrusel(-1)">Anterior</button>
+<button onclick="moverCarrusel(1)">Siguiente</button>
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+    </main>
+</section>
+</body>
+</html>

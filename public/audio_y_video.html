@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fauna del Pleistoceno</title>
+    <link rel="stylesheet" href="colores.css">
+</head>
+<body>
+<header>
+   
+   
+   <nav class="navbar"><h1>Fauna del Pleistoceno en el mundo y Mexico</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clima.html">Clima</a></li>
+            <li><a href="fauna.html">Fauna</a></li>
+            <li><a href="extincion.html">Extinción</a></li>
+            <li><a href="documentales.html">Documentales</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="audio_y_video.html">Multimedia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+<h2>Audios y Videos</h2>
+<h3>Smilodon Rugiendo</h3>
+<p>Este es uno de los sonidos representativos del smilodon. Pero hay que tomar encuenta que es una edicion. El animal no hacia este sonido realmente.</p>
+<audio controls>
+    <source src="smilodon roar.mpeg" type="audio/mpeg">
+    </audio>
+
+<h3>Smilodon Cazando</h3>
+<iframe width="560" height="315" 
+src="https://drive.google.com/file/d/10e1P8bhNNnFvJV688CFyL65Cfti8xJva/view?usp=drive_link" 
+frameborder="0" allowfullscreen>
+</iframe>
+</section>
+<section>
+<h3>Sonido de Mamut</h3>
+<p>En el caso del sonido del mamut, era mas o menos parecido al elefante asiatico, ya que con este tiene mas el parecido y son de la misma familia.</p>
+<audio controls>
+    <source src="mammoth sounds.mpeg" type="audio/mpeg">
+</audio>
+
+<h3>Mamuts Migrando</h3>
+<iframe width="560" height="315" 
+src="https://drive.google.com/file/d/1B5R7GwCeNMBp7w5kxVNWcJmtgLB84kDT/view?usp=drive_link" 
+frameborder="0" allowfullscreen>
+</iframe>
+</section>
+<section>
+<button onclick="toggleModo()">Modo oscuro / claro</button>
+
+<input type="text" id="entradaLista">
+<button onclick="agregarElemento()">Agregar</button>
+
+<ul id="lista"></ul>
+
+<button onclick="darLike()">👍 Me gusta</button>
+<p>Likes: <span id="contadorLike">0</span></p>
+
+<button id="btnArriba" onclick="subir()" style="display:none; position:fixed; bottom:20px; right:20px;">
+↑
+</button>
+
+<footer>
+    <p>&copy; 2026 - Fauna del Pleistoceno en el mundo y Mexico</p>
+</footer>
+    <script src="script.js"></script>
+</section>
+
+</main>
+</body>
+</html>
